@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yearly Salary Calculator</title>
+</head>
+<body>
+
+<!-- Opening script tag with the type attribute -->
+<script type="text/javascript">
+
+    // Function to calculate yearly salary
+    function calculateYearlySalary() {
+        // Get the input values from the user
+        var hourlyWageInput = document.getElementById("hourlyWage");
+        var hoursPerWeekInput = document.getElementById("hoursPerWeek");
+
+        // Store the input values in variables
+        var hourlyWage = hourlyWageInput.value;
+        var hoursPerWeek = hoursPerWeekInput.value;
+
+        // Parse the variables to ensure they are in number format
+        hourlyWage = parseFloat(hourlyWage);
+        hoursPerWeek = parseFloat(hoursPerWeek);
+
+        // Calculate yearly salary (assuming 52 weeks in a year)
+        var yearlySalary = hourlyWage * hoursPerWeek * 52;
+
+        // Display the result
+        document.write("<br><br>Your yearly salary is: $" + yearlySalary.toFixed(2));
+    }
+
+</script>
+<!-- Closing script tag -->
+
+<!-- HTML form with two text inputs and a button to trigger the calculation -->
+<form>
+    <label for="hourlyWage">Hourly Wage:</label>
+    <input type="text" id="hourlyWage">
+
+    <label for="hoursPerWeek">Hours per Week:</label>
+    <input type="text" id="hoursPerWeek">
+
+    <button type="button" onclick="calculateYearlySalary()">Calculate Yearly Salary</button>
+</form>
+
+</body>
+</html>

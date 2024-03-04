@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yearly Salary Calculator</title>
+    <style>
+        /* Add a style tag for styling */
+        body {
+            background-color: #f0f0f0; /* Set a light background color */
+        }
+        h1 {
+            color: pink; /* Set the title color to pink */
+        }
+    </style>
 </head>
 <body>
 
@@ -45,5 +54,9 @@
     <button type="button" onclick="calculateYearlySalary()">Calculate Yearly Salary</button>
 </form>
 
+<!-- Add the title at the top of the webpage -->
+<h1>Salary Calculator</h1>
+
 </body>
 </html>
+
